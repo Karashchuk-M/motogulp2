@@ -25,6 +25,13 @@ $('.whatinterestsyou__slider').slick({
     slidesToScroll: 1,
     slidesToShow: 1,
 });
+$('.aftermap__slider').slick({
+    arrows: true,
+    slidesToScroll: 0.5,
+    slidesToShow: 1.5,
+    nextArrow: '<img src="../images/right-arrow.svg" alt="">',
+    prevArrow: '<img src="../images/left-arrow.svg" alt="">',
+});
 		
 
 

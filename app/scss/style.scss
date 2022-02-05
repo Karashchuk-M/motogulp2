@@ -471,69 +471,22 @@
         height: 100%;
 
     }
-   
-    &__slider {
-
-
-    }
-    &__slider-item {
-        padding: 0;
-    }
-    .slick-track{
-        display: flex;
-        align-items: flex-end;
-        
-    }  
-    .slick-arrow{
-        position: absolute;
-        top: 80%; // выравнивание по вертикали
-        margin: -15px 100px 0 0; // корректировка  вертикального выравнивания
-        z-index: 2; // стрелки сверху картинок
-        font-size: 0; // убираем надпись на дефолтной стрелке
-        width: 183px; // ширина стрелки
-        height: 183px; // высота стрелки
-        border-radius: 50%;
-        border-color: #17212B;
-      }
-    .slick-arrow.slick-prev{
-
-        right: 0; 
-        background-position: 0 0; 
-    }
+   .button__play {
+        background-image: url(../images/button_play.png)  ;
+         background: transparent;
+         position: absolute;
+   }
     
-    .slick-arrow.slick-next{
-        right: 0; // правая стрелка переместилась справа от слайдера
-        background: url('../images/whatinterestsyou_arrow.svg') 0 0 / 100% no-repeat;
-        background-position: center;
-        background-size: 100%;
-        border: 1px solid transparent;
-        border-image: linear-gradient( to right, #E53323 0%, #F29100 100%);
-        border-image-slice:  1;
-        cursor: pointer;
-        background-color: transparent;
-    } 
-    &__slider-img {
-        max-width: 100%;
-        max-height: 780px;
-        width: 1300px;
-        height: 780px;
-
-    }
-    .slick-slider{
-        min-width: 0;
-        max-width: 1300px;
-    }
-    .slick-track{
-        display: flex;
-        align-items: flex-end;       
-    }  
 }
 .map {
-    width: 100%;
-    height: 820px;
+    max-width: 100%;
+    position: relative;
     .container {
+        position: relative;
         display: flex;
         flex-direction: column;
+        height: 840px;
+
     }
     &__info {
         display: flex;
@@ -552,8 +505,7 @@
         flex-direction: row;
         text-align: end;
         width: 32%;
-        justify-content: center;
-        
+        justify-content: center;   
     }
     &__title {
         font-family: Halvar Breitschrift;
@@ -566,7 +518,6 @@
         margin-right: 3.5%;
         letter-spacing: 0.1px ; 
         width: 740px;
-
     }
     &__img {
         position: absolute;
@@ -575,6 +526,7 @@
         margin: 0;
         width: 50px;
         height: 58px;
+
     }
     &__text {
         padding: 0;
@@ -585,15 +537,93 @@
         font-weight: 400;
         height: 120px;
         color: #2D363F;
+
     }
+    &__iframe {
+        position: absolute;
+        margin-top: 310px;
+        margin-left: 158px;
+    }
+    &__bottom_backgound {
+        position: absolute;
+        z-index: -3;
+        width: 100%;
+        height: 240px;
+        background-color: #17212B;
+        margin-top: 600px;
+    }
+
 }
-.accordion {
-    &__title {
-        font: 0.8rem/1.2 Arial, sans-serif; /* Параметры шрифта */
-        border: 1px solid #e9eaec; /* Параметры рамки */
-        border-radius: 3px; /* Скругляем уголки */
-        color: #848994; /* Цвет текста */
-        margin-bottom: 10px; /* Расстояние между пунктами */
+.aftermap {
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 628px;
+        background-color: #17212B;
+
+    }
+    &__slider {
+        position: relative;
+    }
+    &__slider-item {
+        padding-left: 25px;   
+    }
+ 
+    .slick-list {
+        border: 2px solid green;
+        margin-left: 30px;
+        overflow: hidden;    
+    }     
+    
+.slider__item img{
+    max-width: 100%;
+    max-height: 468px;
+    width: 700px;
+    height: 468px;
+}
+    .slick-track{
+        display: flex;
+        align-items: flex-end;
+        
+    }  
+    .slick-arrow{
+        position: absolute;
+        //top: 50%; // выравнивание по вертикали
+        bottom: 20px;
+        margin: -15px 0 0 0; // корректировка  вертикального выравнивания
+        z-index: 2;
+       //font-size: 0; // убираем надпись на дефолтной стрелке
+        width: 30px; // ширина стрелки
+        height: 30px; // высота стрелки
+      }
+      .slider .slick-arrow.slick-prev{
+        border: 1px solid #E53323;
+        left: 10px; // левая стрелка остается с левой стороны слайдера
+        background: url('../images/left-arrow.-bg.png') 0 0 / 100% no-repeat;
+    }
+    
+    .slick-arrow.slick-next{
+        left: 40px; // правая стрелка переместилась справа от слайдера
+        background: url('../images/right-arrow-bg.png') 0 0 / 100% no-repeat;
+    } 
+    .slick-slider{
+        min-width: 0;
+        max-width: 90%;
+        border: 3px solid #F29100;
+        left: 10%;
+    }
+    .slick-track{
+        display: flex;
+        align-items: flex-end;    
+        border: 1px solid red; 
+    }  
+
+}
+.video {
+    &__item {
+    width: 1300px;
+    max-width: 1300px;  
 
     }
 }
@@ -601,12 +631,15 @@
     position: relative;
     max-width: 1300px;
     width: 100%;
-    height: 143px;
-    background-color: #17212B;
     display: inline;
     justify-content: space-between;
     text-align: center;
     margin: 0 auto;
+    .container {
+        background-color: #17212B;
+        background-image: none;
+        height: 140px;
+    }
     &__copyright {
         width: 338px;
         height: 20px;
@@ -619,9 +652,11 @@
 
     }
     &__logo {
-        height: 36px;;
+        height: 36px;
         margin-left: 76%;
+        margin-top: -40px;
         padding: 0;
     }
 }
 
+//'node_modules/jquery-ui/ui/widgets/accordion.js',

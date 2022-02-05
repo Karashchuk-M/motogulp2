@@ -68,6 +68,7 @@ function build() {
   return src([
     'app/css/style.min.css',
     'app/fonts/**/*',
+    'app/videos/**/*',
     'app/js/main.min.js',
     'app/*.html'
   ], {base: 'app'})
