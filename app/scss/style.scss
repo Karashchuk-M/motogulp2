@@ -471,12 +471,39 @@
         height: 100%;
 
     }
-   .button__play {
-        background-image: url(../images/button_play.png)  ;
-         background: transparent;
-         position: absolute;
-   }
-    
+    &__wrapper_video {
+        display: table;
+        width: auto;
+        position: relative;
+        width: 100%;
+    }
+    .video {
+        width: 100%;
+    }
+    .playpause {
+        background-image:url("../images/button_play.png");
+        background-repeat:no-repeat;
+        width:15%;
+        height:15%;
+        position:absolute;
+        left:0%;
+        right:0%;
+        top:0%;
+        bottom:0%;
+        margin:auto;
+        background-size:contain;
+        background-position: center;
+    }  
+
+}
+.whatinterestsyou__menu {
+    .accordion {
+        background-color: #cfd8dc;
+        color: #fff;
+    }
+    .panel {
+
+    }
 }
 .map {
     max-width: 100%;
@@ -598,12 +625,12 @@
       .slider .slick-arrow.slick-prev{
         border: 1px solid #E53323;
         left: 10px; // левая стрелка остается с левой стороны слайдера
-        background: url('../images/left-arrow.-bg.png') 0 0 / 100% no-repeat;
+        background: url('images/left-arrow.-bg.png') 0 0 / 100% no-repeat;
     }
     
     .slick-arrow.slick-next{
         left: 40px; // правая стрелка переместилась справа от слайдера
-        background: url('../images/right-arrow-bg.png') 0 0 / 100% no-repeat;
+        background: url('images/right-arrow-bg.png') 0 0 / 100% no-repeat;
     } 
     .slick-slider{
         min-width: 0;
@@ -617,13 +644,6 @@
         border: 1px solid red; 
     }  
 
-}
-.video {
-    &__item {
-    width: 1300px;
-    max-width: 1300px;  
-
-    }
 }
 .vacancies {
 
@@ -757,7 +777,7 @@
         display: inline-block;
     }
     &__phone {
-        background-image: url("../images/contacts_phone.svg");
+        background-image: url("images/contacts_phone.svg");
         background-repeat: no-repeat;
     }
     &__phone,

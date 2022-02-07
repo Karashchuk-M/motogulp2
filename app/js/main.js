@@ -32,6 +32,12 @@ $('.aftermap__slider').slick({
     nextArrow: '<img src="../images/right-arrow.svg" alt="">',
     prevArrow: '<img src="../images/left-arrow.svg" alt="">',
 });
+$('.video').parent().click(function () {
+    if($(this).children(".video").get(0).paused){        $(this).children(".video").get(0).play();   $(this).children(".playpause").fadeOut();
+      }else{       $(this).children(".video").get(0).pause();
+    $(this).children(".playpause").fadeIn();
+      }
+  });
 		
 
 
