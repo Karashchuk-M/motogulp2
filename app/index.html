@@ -274,7 +274,10 @@
         </div> 
       </section>
       <section class="vacancies">
+        <div class="vacancies__gray_backgound"></div>
         <div class="container">
+          <div class="vacancies__dark_backgound"></div>
+
           <div class="vacancies__top">
             <h1 class="vacancies__title">ВАКАНСІЇ</h1>
               <a class="vacancies__link" href="#"><img class="vacancies__img" src="images/vacancies_work.png"></a>
@@ -292,8 +295,17 @@
               <p><input class="vacancies__input_name" name="email" type="email" placeholder="E-mail"> </p>
               <p><input class="vacancies__input_name" name="phone" type="text" placeholder="Телефон"></p>
               <p><input class="vacancies__input_name" name="message" type="text" placeholder="Повідомлення"></p>
-              <button class="vacancies__button_submit" type="submit">Відправити</button>
-
+              <div class="form-group">
+                <label class="label">
+                  <img class="material-icons" src="images/file_icon.png" >
+                  <span class="file__title">добавити файл</span>
+                  <input class="add__file" type="file">
+                </label>
+              </div>
+              <div class="vacancies__button_bg">
+                <img class="vacancies__submit_img" src="images/bg_button_send.png">
+                <button class="vacancies__button" type="submit">Відправити</button>
+            </div>
             </form>
           </div>
       </section>
@@ -303,17 +315,16 @@
           <div class="contacts__info">
             <h1 class="contacts__title">Зв'язатися з нами</h1>
             <p class="contacts__phone">Номер телефону</p>
-            <p class="">+38 (067) 0000 277</p>
-            <p class="">+38 (067) 0000 266 </p>
+            <p class="contacts__info_text">+38 (067) 0000 277</p>
+            <p class="contacts__info_text">+38 (067) 0000 266 </p>
             <p class="contacts__mail">E-mail</p>
-            <p class=""><a href="tdmotorgroup@gmail.com">tdmotorgroup@gmail.com</a></p>
+            <p><a class="contacts__info_text" href="tdmotorgroup@gmail.com">tdmotorgroup@gmail.com</a></p>
             <p class="contacts__social">Соцмережі</p>
-            <p>Facebook</p>
-            <p class="">Instagram</p>
+            <p  ><a class="contacts__info_text" href="#">Fasebook</a></p>
+            <p ><a  class="contacts__info_text" href="#">Instagram</a></p>
             <p class="contacts__time" >Години роботи</p>
-            <p>Пн-Пт 8.00-21.00</p>
-            <p>Сб-Нд 10.00-20.00</p>
-            <p></p>
+            <p class="contacts__info_text">Пн-Пт 8.00-21.00</p>
+            <p class="contacts__info_text">Сб-Нд 10.00-20.00</p>
           </div>
           <img class="contacts__img" src="images/contacts_img.png"  >
       </div>
