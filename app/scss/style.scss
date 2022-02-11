@@ -5,24 +5,26 @@
 @import 'global';
 
 .header {
-    border: 1px solid #F29100;
     position: relative;
     top: 23px;
-    max-width: 1300px;
     width: 100%;
     margin: 0 auto;
     height: 842px;
     background-image: url(../images/iStock-1.png);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     .container::before {
-        max-width: 1300px;
+        background-size: cover;
         content: "";
         position: absolute;
         width: 100%;
         height: 100%;
         background: #0E0B1A;
         opacity: 0.6;
+    }
+    .container {
+        height: 842px;
     }
     &__inner {
         display        : flex;
@@ -73,38 +75,43 @@
         word-spacing: normal;
   
     }
-    &__button_form {
-        margin-top: 40px;
-        background-color: transparent;
-        width: 197px;
-        height: 44px;
-        border: 1px solid transparent;
-        border-image: linear-gradient( to right, #E53323 0%, #F29100 100%);
-        border-image-slice:  1;
-        cursor: pointer;
-        display: inline-block;
-        font-family:  "Halvar Breitschrift";
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 20px;
-        color: #fff;
-        top: 20px;
-        left: 20px;
-        letter-spacing: 1.5px;
- 
-    }
-    &__button_text {
-        position: absolute;
+    .request {
+        position: relative;
+        width: 560px;
+        height: 64px;
+        margin-top: 61px;
         display: flex;
+        flex-direction: row;
         flex-wrap: nowrap;
-        font-family:  "Halvar Breitschrift";
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 20px;
-        color: #fff;
-        width: 150px;
-        letter-spacing: 1.5px;
     }
+    .request__button {
+        border: none;
+        margin-top: 5px;
+        width: 250px;
+        color: #fff;
+        justify-content: center;
+        font-family: "Halvar Breitschrift";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        text-transform: uppercase;
+        margin-left: 10px;
+        margin-top: 10px;
+        padding: 0;
+        cursor: pointer;
+
+        
+    }
+    .request__img {
+        position: absolute;
+        z-index: 1;
+        width: 180px;
+        height: 42px;
+    }
+  
 }
 .header__languages {
     position: relative;
@@ -116,7 +123,6 @@
     font-size: 16px;
     line-height: 19px;
     color: #ffffff;
-    /* identical to box height */
     text-transform: uppercase;
     cursor: pointer;
     left: 1px;
@@ -156,10 +162,17 @@
         margin: 0 auto;
     }
 .top{
-    position: absolute;
-    z-index: 10;
-    top: 784px;
-    margin-left: 150px;
+
+    .container {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        z-index: 10;
+        top: 784px;
+        margin-left: 150px;
+        width: 89.8%;
+    }
     .slick-slider {
         max-width: 1240px;
         width: 1240px;
@@ -202,10 +215,12 @@
 .mission {
     border:  2px solid #E53323;
     margin-top: 724px;
-    margin-left: 5%;
+    width: 100%;
+    position: relative;
 
-    width: 1300px;
-    max-width: 100%;
+    .container{
+        padding-left: 5%;
+    }
     &__title {
         color: #17212B;
         margin-left: 62px;
@@ -227,37 +242,43 @@
     &__slider {
         position: relative;
         display: flex;
+        right: 0;
+        left: 7.6%;
         
     } 
+
     .slick-slider{
+        margin-bottom: 0;
         min-width: 0;
         max-width: 1100px;
         margin-left: 20%;
-    }
+        
+    } 
+
     .slick-track{
         display: flex;
         align-items: flex-end;
-        
     }  
     .slick-arrow{
         position: absolute;
-        top: 58%; // выравнивание по вертикали
-        margin: -15px 0 0 0; // корректировка  вертикального выравнивания
-        z-index: 2; // стрелки сверху картинок
-        font-size: 0; // убираем надпись на дефолтной стрелке
-        width: 183px; // ширина стрелки
-        height: 183px; // высота стрелки
+        left: 71%;
+        top: 58%; 
+        margin: -15px 0 0 0; 
+        z-index: 2; 
+        font-size: 0; 
+        width: 183px;
+        height: 183px; 
         border-radius: 50%;
         border-color: #17212B;
+   
       }
     .slick-arrow.slick-prev{
-
         right: 0; 
         background-position: 0 0; 
     }
     
     .slick-arrow.slick-next{
-        right: 0; // правая стрелка переместилась справа от слайдера
+        right: 0; 
         background: url('../images/backgroundArrowsSlider.svg') 0 0 / 100% no-repeat;
         background-position: center;
         background-size: 89%;
@@ -265,8 +286,8 @@
     .finger__pointer {
         position: absolute;
         z-index: 15;
-        left: 86%;
-        top: 82.5%;
+        left: 88%;
+        top: 82%;
     }
     &__slider-img{
         max-width: 100%;
@@ -277,6 +298,7 @@
 }
 .advantages {
     .container{
+        padding-left: 0.2%;
         background-color: #F6F6F6;
         padding-top: 90px;
         padding-bottom: 160px;
@@ -296,7 +318,7 @@
         justify-content: space-evenly; 
     }
     &__item {
-        background: url(../images/bg_advantages.svg)  ;
+        background: url(../images/bg_advantages.svg) ;
         background-repeat: no-repeat;
         background-size: 8%;
         width: 400px;
@@ -304,7 +326,7 @@
         justify-content: space-between;
         margin-top: 50px;
         margin-bottom: 50px;
-        padding-left: 40px;
+        padding-left: 50px;
     }
     &__item-title {
         font-family: "Halvar Breitschrift";
@@ -351,12 +373,11 @@
 .whywe {
     margin: 0;
     position: relative;
-
-
-   .container {
-    background-color: #17212B;
     display: flex;
-    height: 520px;
+   .container {
+        background-color: #17212B;
+        display: flex;
+        height: 520px;
 }
     &__info {
         margin-right: 8%;
@@ -386,7 +407,7 @@
     &__slider {
         position: absolute;
         top: -52px;
-        left: 750px;
+        left: 58%;
 
     }
     &__slider-item {
@@ -399,23 +420,22 @@
     }  
     .slick-arrow{
         position: absolute;
-        top: 80%; // выравнивание по вертикали
-        margin: -15px 100px 0 0; // корректировка  вертикального выравнивания
-        z-index: 2; // стрелки сверху картинок
-        font-size: 0; // убираем надпись на дефолтной стрелке
-        width: 183px; // ширина стрелки
-        height: 183px; // высота стрелки
+        top: 78%; 
+        margin: -15px 100px 0 0; 
+        z-index: 2; 
+        font-size: 0; 
+        width: 183px; 
+        height: 183px;
         border-radius: 50%;
         border-color: #17212B;
       }
     .slick-arrow.slick-prev{
-
         right: 0; 
         background-position: 0 0; 
     }
     
     .slick-arrow.slick-next{
-        right: 0; // правая стрелка переместилась справа от слайдера
+        right: 0;
         background: url('../images/backgroundArrowsSlider.svg') 0 0 / 100% no-repeat;
         background-position: center;
         background-size: 85%;
@@ -438,7 +458,7 @@
     .finger__pointer {
         position: absolute;
         z-index: 15;
-        left: 80%;
+        left: 87%;
         top: 88%;
     }
 }
@@ -632,63 +652,55 @@
     .container {
         position: relative;
         display: flex;
-        flex-direction: column;
-        height: 628px;
+        flex-direction: row;
+        justify-content: end;
+        height: 628px; 
         background-color: #17212B;
-
     }
     &__slider {
+        width: 100%;
         position: relative;
+        padding: 0;
     }
     &__slider-item {
-        padding-left: 25px;   
+        padding: 0;
     }
  
     .slick-list {
         border: 2px solid green;
-        margin-left: 30px;
+        margin-left: 13%;
         overflow: hidden;    
     }     
     
-.slider__item img{
+  .slider__item img{
     max-width: 100%;
     max-height: 468px;
     width: 700px;
     height: 468px;
-}
-    .slick-track{
-        display: flex;
-        align-items: flex-end;
-        
-    }  
+    padding: 0;
+    margin: 0;
+   }
+
     .slick-arrow{
         position: absolute;
-        bottom: 20px;
-        margin: -15px 0 0 0; // корректировка  вертикального выравнивания
+        bottom: 100px;
+        margin: -15px 0 0 0; 
         z-index: 2;
-       //font-size: 0; // убираем надпись на дефолтной стрелке
-        width: 30px; // ширина стрелки
-        height: 30px; // высота стрелки
-      }
-      .slider .slick-arrow.slick-prev{
-        border: 1px solid #E53323;
-        left: 10px; // левая стрелка остается с левой стороны слайдера
-        background: url('images/left-arrow.-bg.png') 0 0 / 100% no-repeat;
+        font-size: 0; 
+        width: 30px; 
+        height: 30px; 
+
     }
-    
-    .slick-arrow.slick-next{
-        left: 40px; // правая стрелка переместилась справа от слайдера
-        background: url('images/right-arrow-bg.png') 0 0 / 100% no-repeat;
-    } 
     .slick-slider{
-        min-width: 0;
-        max-width: 90%;
+        max-width: 100% ;
+        width: 100%;
         border: 3px solid #F29100;
         left: 10%;
     }
     .slick-track{
         display: flex;
-        align-items: flex-end;    
+        flex-direction: row;
+        justify-content: end; 
         border: 1px solid red; 
     }  
 
@@ -699,7 +711,7 @@
         position: absolute;
         z-index: -10;
         width: 45%;
-        height: 300px;
+        height: 230px;
         margin-top: 700px;
         margin-left: 48.5%;
     }
@@ -744,8 +756,7 @@
         color: #fff;
         width: 52%;
         text-transform: none;
-        margin-bottom: 40px;
-    
+        margin-bottom: 40px;   
     }
     &__big_latter {
         text-transform: uppercase;
@@ -840,7 +851,6 @@
     }
     button {
         height: 30px;
-
     }
     &__submit_img {
         position: absolute;
@@ -849,27 +859,51 @@
         height: 41px;
 
     }
-   .form-group{width: 40%;  padding:0;margin-top:15px;}
-   .add__file{position:absolute;top:0px;cursor:pointer; opacity:0; filter:alpha(opacity=0); -ms-filter:"alpha(opacity=0)"; -khtml-opacity:0; -moz-opacity:0; }
-   .label{display:flex; cursor:pointer;text-align:left; justify-content: left;}
+   .form-group{
+       width: 40%;  
+       padding:0;
+       margin-top:15px;
+    }
+   .add__file{
+       position:absolute;
+       top:0px;
+       cursor:pointer; 
+       opacity:0; 
+       filter:alpha(opacity=0);
+        -ms-filter:"alpha(opacity=0)"; 
+        -khtml-opacity:0;
+         -moz-opacity:0; 
+        }
+   .label{
+       display:flex;
+        cursor:pointer;
+        text-align:left; 
+        justify-content: left;
+    }
 
-   .label .file__title{padding-left: 11px;  color:#fff; font-family: "Halvar Breitschrift";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-transform: lowercase;
+   .label .file__title{
+       padding-left: 11px;  
+        color:#fff; 
+        font-family: "Halvar Breitschrift";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: lowercase;
     }
 }
 
 .contacts {
     display: flex;
+    flex-direction: row;
     padding-top: 62px;
     .container {
         display: flex;
+        justify-content: end;
         padding-left: 6%;
+        background-image: none;
     }
     &__info {
         width: 506px;
@@ -890,9 +924,7 @@
         letter-spacing: 0em;
         text-align: left;
         color: #2D363F;
-        padding-left: 36px;
-
-        
+        padding-left: 36px;       
     }
     &__title {
         width: 480px;
