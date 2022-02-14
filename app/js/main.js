@@ -5,6 +5,34 @@ $('.top__slider').slick({
     slidesToScroll: 0.5,
     slidesToShow: 2.5,
     autoplay: true,
+
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 0.5,
+
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1.5,
+            slidesToScroll: 0.5
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+
+      ]
+    
 });
 
 $('.mission__slider').slick({
@@ -18,6 +46,7 @@ $('.whywe__slider').slick({
     arrows: true,
     slidesToScroll: 0.5,
     slidesToShow: 1.6,
+
 });
 $('.whatinterestsyou__slider').slick({
     dots: false,
