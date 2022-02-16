@@ -44,9 +44,9 @@ $('.mission__slider').slick({
 $('.whywe__slider').slick({
     dots: false,
     arrows: true,
-    slidesToScroll: 0.5,
+    slidesToScroll: 0.36,
     slidesToShow: 1.6,
-
+      
 });
 $('.whatinterestsyou__slider').slick({
     dots: false,
@@ -59,8 +59,24 @@ $('.aftermap__slider').slick({
     arrows: true,
     slidesToScroll: 0.5,
     slidesToShow: 1.5,
-    nextArrow: '<img src="../images/right-arrow.svg" alt="">',
-    prevArrow: '<img src="../images/left-arrow.svg" alt="">',
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+
+    ]
+  
 });
 
 $('.video').parent().click(function () {

@@ -602,7 +602,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        height: 840px;
+        height: 848px;
 
     }
     &__info {
@@ -662,7 +662,7 @@
     }
     &__iframe {
         position: absolute;
-        margin-top: 11.5%;
+        margin-top: 150px;
         margin-left: 10.4%;
         max-width: 100%;
         min-width: none;
@@ -674,7 +674,7 @@
         width: 100%;
         height: 240px;
         background-color: #17212B;
-        margin-top: 600px;
+        margin-top: 608px;
     }
 
 }
@@ -684,56 +684,85 @@
         display: flex;
         flex-direction: row;
         justify-content: end;
-        height: 628px; 
+        height: auto;
         background-color: #17212B;
+        padding-left: 0;
+
+    }
+    &__arows-bg {
+        position: absolute;
+        z-index: 9;
+        display: flex;
+        bottom: 95px;
+        left: 10px;
+    }
+    &__left-border {
+        margin-right: 10px;
     }
     &__slider {
-        width: 100%;
-        position: relative;
-        padding: 0;
+        padding-bottom: 90px;
+       width: 100%;
+       overflow: hidden;
     }
-    &__slider-item {
-        padding: 0;
-    }
- 
     .slick-list {
         margin-left: 13%;
+        height: 100%;
+        width: 100%; 
         overflow: hidden;    
-    }     
+    } 
+    .slick-slide{  
+        margin-left: 30px;
+    }    
     
-  .slider__item img{
-    max-width: 100%;
-    max-height: 468px;
-    width: 700px;
-    height: 468px;
+  &__slider_item{
     padding: 0;
     margin: 0;
+   }
+   &__slider-img{
+       width: 100%;
    }
 
     .slick-arrow{
         position: absolute;
         bottom: 100px;
         margin: -15px 0 0 0; 
-        z-index: 2;
+        z-index: 200;
         font-size: 0; 
         width: 30px; 
         height: 30px; 
 
     }
+    .slick-arrow.slick-prev{
+        left: 70px; 
+        background: url('../images/right-arrow.svg') 0 0 / 100% no-repeat;
+        background-position: center;
+        background-size: 70%;
+        border: none;
+    }
+    
+    .slick-arrow.slick-next{
+        left: 20px;
+        background: url('../images/left-arrow.svg') 0 0 / 100% no-repeat;
+        background-position: center;
+        background-size: 70%;
+        border: none;
+    } 
     
     .slick-slider{
         max-width: 100% ;
         width: 100%;
-        left: 10%;
+        
     }
     .slick-track{
         display: flex;
         flex-direction: row;
         justify-content: end; 
+
     }  
 
 }
 .vacancies {
+ 
     &__gray_backgound {
         background-color: #F6F6F6;
         position: absolute;
@@ -750,7 +779,6 @@
 
     }
     &__top {
-        margin-top: 20px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
