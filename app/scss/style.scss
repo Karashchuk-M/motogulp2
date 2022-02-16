@@ -216,7 +216,7 @@
         line-height: 37px;
         margin-left: 40px;
         font-style: normal;
-       justify-content: center;
+        justify-content: center;
 
     }
 }
@@ -234,6 +234,7 @@
         text-align: right;
     }
     &__title {
+        font-size: 4vw;
         color: #17212B;
         margin-right: 36%;
 
@@ -268,7 +269,7 @@
         flex-direction: row;
         justify-content: end;
         min-width: 0;
-        max-width: 1200px;
+        max-width: 100%;
         margin-left: 20%;
         
     } 
@@ -284,8 +285,8 @@
         margin: -15px 0 0 0; 
         z-index: 2; 
         font-size: 0; 
-        width: 16%;
-        height: 24%; 
+        width: 183px;
+        height: 183px; 
         border-radius: 50%;
         border-color: #17212B;
    
@@ -313,9 +314,7 @@
         width: 1040px;
         height: auto;
     }
-    .finger__pointer {
-        display: none;
-    }
+
 }
 .advantages {
     .container{
@@ -329,6 +328,7 @@
         height: 100%;
         color: #17212B;
         font-weight: 900;
+        font-size: 4vw;
     }
     &__items {
         display: flex;
@@ -414,7 +414,7 @@
     &__title {
         margin-top: 85px;
         font-family: "Halvar Breitschrift";
-        font-size: 32px;
+        font-size: 4vw;
         font-weight: 600;
         line-height: 37px;
         text-transform: uppercase;
@@ -437,11 +437,6 @@
     &__slider-item {
         padding: 0;
     }
-    .slick-track{
-        display: flex;
-        align-items: flex-end;
-        
-    }  
     .slick-arrow{
         position: absolute;
         top: 78%; 
@@ -468,11 +463,12 @@
         max-width: 100%;
         max-height: 500px;
         width: 360px;
-        height: 480px;
+        height: auto;
 
     }
+
     .slick-slider{
-        min-width: 0;
+
         max-width: 640px;
     }
     .slick-track{
@@ -484,6 +480,7 @@
         z-index: 15;
         left: 87%;
         top: 88%;
+    
     }
 }
 .whatinterestsyou {
@@ -535,7 +532,7 @@
     &__title {
         margin-top: 130px;
         font-family: "Halvar Breitschrift";
-        font-size: 64px;
+        font-size: 4vw;
         font-weight: 900;
         line-height: 74px;
         text-transform: uppercase;
@@ -610,10 +607,12 @@
     }
     &__info {
         display: flex;
+
+        flex-direction: row;
         flex-wrap: nowrap;
-        margin-top: 130px;
+        margin-top: 9.5%;
         text-align: center;
-        padding: 0;
+        max-width: 1440px;
         width: 100%;
 
     }
@@ -621,13 +620,13 @@
         position: relative;
         display: flex;
         flex-direction: row;
-        text-align: end;
-        width: 32%;
-        justify-content: center;   
+        max-width: 500px;
+        justify-content: start;  
+
     }
     &__title {
         font-family: "Halvar Breitschrift";
-        font-size: 64px;
+        font-size: 4vw;
         font-weight: 900;
         line-height: 74px;
         text-transform: uppercase;
@@ -635,7 +634,7 @@
         margin-left: 3.5%;
         margin-right: 3.5%;
         letter-spacing: 0.1px ; 
-        width: 740px;
+        max-width: 740px;
     }
     &__img {
         position: absolute;
@@ -644,7 +643,8 @@
         margin: 0;
         width: 50px;
         height: 58px;
-
+        object-fit: contain;
+        margin: 5px;
     }
     &__text {
         padding: 0;
@@ -655,12 +655,18 @@
         font-weight: 400;
         height: 120px;
         color: #2D363F;
+        margin-left: 2.5%;
+        margin-right: 0;
+        padding-right: 0;
 
     }
     &__iframe {
         position: absolute;
-        margin-top: 310px;
-        margin-left: 158px;
+        margin-top: 11.5%;
+        margin-left: 10.4%;
+        max-width: 100%;
+        min-width: none;
+
     }
     &__bottom_backgound {
         position: absolute;
@@ -754,7 +760,7 @@
     &__title {
         width: 840px;
         font-family: "Halvar Breitschrift";
-        font-size: 64px;
+        font-size: 4vw;
         font-weight: 900;
         line-height: 74px;
         text-transform: uppercase;
@@ -948,7 +954,7 @@
     }
     &__title {
         width: 480px;
-        size: 64px;
+        size: 4vw;
         display: block;
         margin-bottom: 26px;
     }
