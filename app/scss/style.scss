@@ -983,7 +983,7 @@
     .container {
         display: flex;
         justify-content: end;
-        padding-left: 6%;
+        padding-left: 5%;
         background-image: none;
     }
     &__info {
@@ -991,7 +991,8 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        padding-left: 36px;
+        padding-left: 0;
+        text-transform: none;    
     }
     &__info_text {
         margin: 0 0 14px;
@@ -999,22 +1000,26 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 20px;
+        line-height: 15px;
         letter-spacing: 0em;
         text-align: left;
         color: #2D363F;
-        padding-left: 36px;       
+        padding-left: 36px;   
     }
     &__title {
-        width: 480px;
-        size: 4vw;
+        width: 60%;
+        font-size: 4vw;
         display: block;
         margin-bottom: 26px;
+        text-align: left;
+        justify-content: start;
+        text-transform: uppercase;
+
     }
     &__img {
-        max-width: 750px;
         width: 59%;
         max-height: 540px;
+        height: 100%;
         display: inline-block;
     }
     &__phone {
@@ -1045,7 +1050,7 @@
         font-family: "Halvar Breitschrift";
         font-size: 16px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: bold;
         line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
@@ -1058,33 +1063,43 @@
 }
 .footer {
     position: relative;
-    max-width: 1300px;
-    width: 100%;
-    display: inline;
+    max-width: 100%;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     text-align: center;
     margin: 0 auto;
+    margin-top: 4.5%;
+    overflow: hidden;
     .container {
         background-color: #17212B;
         background-image: none;
         height: 140px;
+        padding-left: 5%;
+        padding-right: 5%;
+        align-items: center;
     }
     &__copyright {
         width: 338px;
         height: 20px;
         color:#ffffff;
-        margin-left: 65px;
+        margin-left: 60px;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
         margin-top: 61px;
 
     }
+    &__transforme_none{
+        text-transform: none;
+    }
     &__logo {
         height: 36px;
         margin-left: 76%;
-        margin-top: -40px;
-        padding: 0;
+        margin-top: -20px;
+
+
     }
 }
 
