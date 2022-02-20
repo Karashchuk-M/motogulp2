@@ -517,84 +517,114 @@
         background-size:contain;
         background-position: center;
     }  
-
 }
-.dropdown {
-    margin: 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-   .container {
+.accordion__items{
+
     background-color: #17212B;
+    overflow: hidden;
+   .container {
+       background-color: #17212B;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: left;
+        padding-left: 5%;
+
+
+   }
+   .accordion__items_title {
+    margin-top: 130px;
+    margin-bottom: 78px;
+    font-family: "Halvar Breitschrift";
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 74px;
+    text-transform: uppercase;
+    color: #fff;
     height: 100%;
-}
-    &__title {
-        margin-top: 130px;
-        font-family: "Halvar Breitschrift";
-        font-size: 4vw;
-        font-weight: 900;
-        line-height: 74px;
-        text-transform: uppercase;
-        color: #fff;
-        margin-left: 5%; 
-        height: 100%;
-    }
-    .accordeon .active {
-        color: #fff;
-      }
-    .accordeon dd {
-          display: none;
-          transform: skewX(30deg);
-        }
-    .accordeon dt {
-            cursor: pointer;
-            height: 18px;
-            transform: skewX(30deg);
-            margin-bottom: 12px;
-            margin-top: 12px;
 
-           }
-    .accordeon dt:after {
-            content: '\002B'; 
-            color: #fff;
-            font-size: 18px;
-            margin-left: 95%;
+   }
 
-          }
-    .accordeon dl {
-            border: 1px solid #C4C4C4;
-            border-left: none;
-            border-top: none;
-            transform: skew(-30deg);
-            
-          }   
-          
-    .active:after {
-            content: "\2212"; 
-            font-size: 18px;
-            margin-left: 95%;
-          }
-    .accordeon {
-        color: #fff;
-        font-family: "Halvar Breitschrift";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
-        width: 73%;
-        margin-left: 12%;
-        margin-top: 40px;
-        margin-bottom: 100px;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    
-  
+   .accordion__items_wrap {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+        width: 82%;
+        margin-bottom: 128px;
+        margin-left: 6%;
+
+   }
+
+  .accordion {
+
+    background-color: #17212B;
+    color: #fff;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-left: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Halvar Breitschrift";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-bottom: 1px solid #C4C4C4;
+    border-right: 1px solid #C4C4C4;
+    transform: skewX(-30deg);
+    height: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
+  .accordion__text{
+    display: inline-block;
+    color: #fff;
+    transform: skewX(30deg);
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.accordion:after {
+    content: '\002B';
+    font-family: "Halvar Breitschrift";
+    font-size: 16px;
+    color: #C4C4C4;
+    font-weight: normal;
+    float: right;
+    margin-left: 5px;
+    transform: skewX(30deg);
+}
+
+.active:after {
+    content: "\2212";
+    font-family: "Halvar Breitschrift";
+    font-size: 16px;
+    color: #C4C4C4;
+    font-weight: normal;
+    float: right;
+    margin-left: 5px;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    width: 97%;
+    background-color: #17212B;
+    color: #fff;
+    font-family: "Halvar Breitschrift";
+    font-size: 14px;
+    transition: max-height 0.2s ease-out;
+    }
+}
+
 .map {
     max-width: 100%;
     position: relative;
@@ -1102,5 +1132,6 @@
 
     }
 }
+
 
 @import 'media';
