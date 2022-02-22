@@ -92,7 +92,7 @@
         width: 250px;
         color: #fff;
         justify-content: center;
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
@@ -121,7 +121,7 @@
     position: relative;
     height: 19px;
     background-color: transparent;
-    font-family: "Halvar Breitschrift";
+    font-family: 'Halvar Breitschrift';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -176,11 +176,13 @@
         top: 784px;
         margin-left: 150px;
         width: 89.8%;
+        
     }
     .slick-slider {
         max-width: 95%;
         width: 1240px;
         height: auto;
+
     
     }
     &__slider-img {
@@ -197,7 +199,9 @@
 
     }
     &__slider-info {
-        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         text-align: left;
         width: 86%;
         height: 120px;
@@ -206,6 +210,7 @@
         z-index: 11;
         bottom: 160px;
         left: 12%;
+  
     }
     &__slider-title{
 
@@ -324,7 +329,7 @@
         padding-bottom: 160px;
     }
     &__title{
-        font-family: "Halvar Breitschrift"; 
+        font-family: 'Halvar Breitschrift'; 
         height: 100%;
         color: #17212B;
         font-weight: 900;
@@ -349,7 +354,7 @@
         padding-left: 50px;
     }
     &__item-title {
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 16px;
         line-height: 18px;
         font-weight: 600;
@@ -371,7 +376,7 @@
     }
 
     &__item-text {
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 16px;
         font-weight: 600;
         line-height: 16px;
@@ -381,7 +386,7 @@
         margin-top: 26px;
     }
     .round-security {
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 18px;
         font-weight: 800;
         line-height: 20px;
@@ -413,7 +418,7 @@
     }
     &__title {
         margin-top: 85px;
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 3vw;
         font-weight: 800;
         line-height: 37px;
@@ -421,7 +426,7 @@
     }
     &__info_text  {
         display: flex;
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 16px;
         font-weight: 400;
         line-height: 20px;
@@ -535,7 +540,7 @@
    .accordion__items_title {
     margin-top: 130px;
     margin-bottom: 78px;
-    font-family: "Halvar Breitschrift";
+    font-family: 'Halvar Breitschrift';
     font-size: 4vw;
     font-weight: 900;
     line-height: 74px;
@@ -568,7 +573,7 @@
     border: none;
     outline: none;
     transition: 0.4s;
-    font-family: "Halvar Breitschrift";
+    font-family: 'Halvar Breitschrift';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -592,7 +597,7 @@
 
 .accordion:after {
     content: '\002B';
-    font-family: "Halvar Breitschrift";
+    font-family: 'Halvar Breitschrift';
     font-size: 16px;
     color: #C4C4C4;
     font-weight: normal;
@@ -603,7 +608,7 @@
 
 .active:after {
     content: "\2212";
-    font-family: "Halvar Breitschrift";
+    font-family: 'Halvar Breitschrift';
     font-size: 16px;
     color: #C4C4C4;
     font-weight: normal;
@@ -619,7 +624,7 @@
     width: 97%;
     background-color: #17212B;
     color: #fff;
-    font-family: "Halvar Breitschrift";
+    font-family: 'Halvar Breitschrift';
     font-size: 14px;
     transition: max-height 0.2s ease-out;
     }
@@ -655,7 +660,7 @@
 
     }
     &__title {
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 4vw;
         font-weight: 900;
         line-height: 74px;
@@ -818,7 +823,7 @@
     }
     &__title {
         width: 840px;
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 4vw;
         font-weight: 900;
         line-height: 74px;
@@ -843,7 +848,7 @@
         text-align: right;
         margin-top: 26px;
         padding-right: 5%;
-        font-family: "Halvar Breitschrift"; 
+        font-family: 'Halvar Breitschrift'; 
         font-weight: 400;
         font-style: normal;
         font-size: 16px;
@@ -878,7 +883,7 @@
 
     }
     &__form_title {
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 32px;
         font-style: normal;
         font-weight: 800;
@@ -905,7 +910,7 @@
         border-bottom:1px solid #fff; 
     }
     input ::placeholder {
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -944,7 +949,7 @@
         width: 150px;
         color: #fff;
         background: #17212B;
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
@@ -991,7 +996,7 @@
    .label .file__title{
        padding-left: 11px;  
         color:#fff; 
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -1026,7 +1031,7 @@
     }
     &__info_text {
         margin: 0 0 14px;
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -1077,7 +1082,7 @@
     &__mail,
     &__social,
     &__time {
-        font-family: "Halvar Breitschrift";
+        font-family: 'Halvar Breitschrift';
         font-size: 16px;
         font-style: normal;
         font-weight: bold;

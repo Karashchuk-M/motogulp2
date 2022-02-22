@@ -2,7 +2,7 @@ $(function () {
 $('.top__slider').slick({
     dots: false,
     arrows: false,
-    slidesToScroll: 0.5,
+    slidesToScroll: 3,
     slidesToShow: 2.5,
     autoplay: true,
 
@@ -12,7 +12,6 @@ $('.top__slider').slick({
           settings: {
             slidesToShow: 2,
             slidesToScroll: 0.5,
-
             dots: false
           }
         },
@@ -29,7 +28,7 @@ $('.top__slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1
           }
-        }
+        },
 
       ]
     
@@ -39,20 +38,20 @@ $('.mission__slider').slick({
     dots: false,
     arrows: true,
     slidesToScroll: 1,
-    slidesToShow: 1,
+    slidesToShow: 1
 });
 $('.whywe__slider').slick({
     dots: false,
     arrows: true,
     slidesToScroll: 0.36,
-    slidesToShow: 1.6,
+    slidesToShow: 1.6
       
 });
 $('.whatinterestsyou__slider').slick({
     dots: false,
     arrows: true,
     slidesToScroll: 1,
-    slidesToShow: 1,
+    slidesToShow: 1
 });
 
 $('.aftermap__slider').slick({
@@ -64,14 +63,14 @@ $('.aftermap__slider').slick({
         breakpoint: 1100,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 1
         }
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 1
         }
       },
 
@@ -79,10 +78,15 @@ $('.aftermap__slider').slick({
   
 });
 
-$('.video').parent().click(function () {
-    if($(this).children(".video").get(0).paused){        $(this).children(".video").get(0).play();   $(this).children(".playpause").fadeOut();
-      }else{       $(this).children(".video").get(0).pause();
-    $(this).children(".playpause").fadeIn();
+$(".video").parent()
+.click(function () {
+    if($(this).children(".video").get(0).paused){       
+       $(this).children(".video").get(0).play();   
+       $(this).children(".playpause").fadeOut();
+      }else{      
+       $(this).children(".video").get(0).pause();
+       $(this).children(".playpause").fadeIn();
+       $("video").attr("controls", false);
       }
   });
 		
