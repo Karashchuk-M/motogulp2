@@ -18,6 +18,7 @@
             margin-left: 0;
             width: 100%;
             height: auto;
+            background-position: 50% 85%;
         }
         .slick-slider {
             max-width: 100%;
@@ -192,7 +193,7 @@
     body {
         h1 {
             font-family: 'Halvar Breitschrift';
-            font-weight: 400;
+            font-weight: 600;
             line-height: 27px;
             font-size: 32px;
             line-height: 37px;
@@ -206,10 +207,27 @@
             letter-spacing: 0em;
             text-align: left;
         }
+        h3 {
+            font-family: 'Halvar Breitschrift';
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 37px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
     }
     .container {
         height: auto;
   
+    }
+    .header__slogan{
+        margin: 0 7%;
+
+    }
+    .header__slogan_bigtaitle {
+        margin-top: 100px;
+        margin-bottom: 40px;
     }
     .header__inner {
         display: flex;
@@ -229,7 +247,6 @@
     .header__slogan {
         max-width: 100%;
         top: 200px;
-
     }
     .mission{
         margin-top: 550px;
@@ -382,10 +399,29 @@
     .logo {
         display: none;
     }
-    &__slogan {
+    .header__slogan {
         display: block;
         max-width: 80%;
         margin-top: 30px; 
+        margin-left: 2%;
+        background-image: url('../images/pointer_down.png') ;
+        background-repeat: no-repeat;
+        background-position: 47.5% 84.7%;
+    }
+    .header__slogan_smalltitle {
+        font-size: 4vw;
+        word-spacing: 3px;
+
+
+    }
+    .header__slogan_bigtaitle {
+        margin-top: 29px;
+        width: 100%;
+    }
+    .top {
+        .container {
+            background-image: none;
+        }
     }
     .mission {
         margin-top: 480px;
